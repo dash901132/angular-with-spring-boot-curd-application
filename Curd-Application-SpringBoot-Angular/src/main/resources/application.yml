@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springboot-angular
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: employee_test
+      repositories:
+        type: auto
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+server:
+  port: 8989
+  error:
+    whitelabel:
+      enabled : false
